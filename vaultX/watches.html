@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Watches</title>
+    <link rel="stylesheet" type="text/css" href="watch.css">
+    <link rel="icon" href="logo/logo.png" type="image/x-icon">
+    
+</head>
+<body>
+<header>
+    <div class="container">
+        <nav class="top-nav">
+            <ul class="nav-links">
+                <li><a href="contact.html" class="other-button">CONTACT</a></li>
+                <li><a href="browse.html" class="current-button">BROWSE</a></li>
+                <li><a href="home.html" class="other-button">MAIN</a></li>
+            </ul>
+        </nav>
+        <div class="logo">
+            <img src="logo/vaultx_logo.png" alt="vaultx_logo">
+        </div>
+        <nav>
+            <ul>
+                <ul class="icons">
+                    <li><a href="#"><img src="logo/1.png" alt="Language_selection"></a></li>
+                    <li><a href="#"><img src="logo/2.png" alt="Language_selection"></a></li>
+                    <li><a href="#"><img src="logo/3.png" alt="Language_selection"></a></li>
+                    <li><a href="#"><img src="logo/4.png" alt="Language_selection"></a></li>
+                </ul>
+                <li class="search-icon">
+                    <input type="text" placeholder="SEARCH">
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section class="Watches">
+        <h2>Watches</h2>
+        <div class="product-container">
+            <div class="product">
+                <img src="watches/9934ad214f0ef35c9eae9f826a16e2c3.jpg" alt="Sneakers">
+                <p>Audemars piguet</p>
+                <p>$150,000</p>
+            </div>
+
+            <div class="product">
+                <img src="watches/arabRolex.jpg" alt="Watches">
+                <p> ARAB ROLEX</p>
+                <p> $236,799</p>
+            </div>  
+            <div class="product">    
+                <img src="watches/f4acff6e571fb82b30938aefc3bed08a.jpg" alt="Jewelry">
+                <p>Vacheron</p>
+                <p>$134,900</p>
+            </div>
+            <div class="product">  
+                <img src="watches/f8f28d24282ad233687b356f8ec846a1.jpg" alt="Jewelry">
+                <p>WHITE ROLEX</p>
+                <p>$180,399</p>
+            </div>
+        </div>
+    </section>
+</main>
+
+<script>
+    
+    const products = document.getElementsByClassName('product');
+
+    
+    const productsArray = Array.from(products);
+
+    
+    productsArray.forEach(product => {
+        product.addEventListener('mouseenter', () => {
+            product.style.transform = 'scale(1.2)';
+            product.style.transition = 'transform 0.3s ease';
+        });
+
+        product.addEventListener('mouseleave', () => {
+            product.style.transform = 'scale(1)';
+        });
+    });
+</script>
+
+</body>
+</html>

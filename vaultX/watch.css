@@ -1,0 +1,177 @@
+body {
+    font-family: 'Bank Gothic', sans-serif;
+    margin-top: 50px;
+    padding: 20px 20px;
+    
+}
+
+
+
+.nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    display: inline;
+    margin-right: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #000;
+}
+
+nav {
+    display: flex;
+    margin-left: 5%;
+    margin-left: auto;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+}
+
+nav li img {
+    margin-right: 20px;
+    display: inline;
+    max-width: 30px;
+}
+
+.top-nav {
+    margin-right: 20px;
+  }
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.Watches a{
+    text-decoration: none;
+    color: black;
+}
+
+.container {
+    top: 0;
+    max-width: auto;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    width: 97%;
+    position: fixed;
+    background-color: #fff;
+}
+
+.logo {
+    width: 200px;
+    height: auto;
+    margin-left: 20%;
+    margin-right: 16%;
+    flex-shrink: 0;
+    flex-grow: 1;
+}
+
+.logo img {
+    width: 50%;
+}
+
+.search-icon {
+    position: relative;
+}
+
+.search-icon input {
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.search-icon input:focus {
+    outline: none;
+}
+
+main {
+    padding: 10px 0;
+}
+
+.Watches {
+    text-align: center;
+}
+
+.Watches h2 {
+    margin-bottom: 50px;
+    font-size: 24px;
+    color: #c1dbda;
+}
+
+.product-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.product {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.product img {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+}
+
+.product p {
+    font-weight: bold;
+}
+
+.other-button {
+    display: inline-block;
+    background-color: white;
+    border: 2px solid #ccc;
+    border-radius: 100px;
+    color: #fff;
+    padding: 7px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+.product-container .product:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+.current-button{
+    display: inline-block;
+    background-color: white;
+    border: 2px solid #ccc;
+    border-radius: 100px;
+    color: #fff;
+    padding: 7px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+.other-button:hover,
+.current-button:hover {
+    background-color: #c1dbda;
+    color: #000;
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+.product p {
+    font-family: 'Pacifico', cursive; 
+}
+
+ .product p:first-of-type {
+    font-weight: bold;
+}

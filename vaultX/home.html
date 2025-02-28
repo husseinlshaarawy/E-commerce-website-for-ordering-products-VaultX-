@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VaultX</title>
+    <link rel="icon" href="logo/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="home.css">
+    <meta name="description" content="Discover premium watches, sneakers, and jewelry at Vor Vault X. Explore our curated collection for the latest styles and trends.">
+    <meta name="keywords" content="watches, sneakers, jewelry, luxury watches, designer sneakers, fine jewelry">
+    <meta name="author" content="Vault X">
+    <style>
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo/logo.png" alt="VaultX Logo">
+        </div>
+        <div class="social-icons">
+            <a href="#"><img src="logo/facebook-logo.png" alt="Facebook"></a>
+            <a href="#"><img src="logo/instagram-icon.png" alt="Instagram"></a>
+            <a href="#"><img src="logo/twitter-icon.png" alt="Twitter"></a>
+        </div>
+    </header>
+    <main>
+        <h1>Vault<span class="color-X">X</span></h1>
+        <p>Welcome to Vault<span class="color-X">X</span> - Your Destination for Rare and Premium Finds!</p>
+
+        
+        <div class="slideshow-container">
+            
+            <img class="slides" src="C:\Users\PC\Desktop\Term 4\Web Programming\vaultX1\vaultX\watches\9934ad214f0ef35c9eae9f826a16e2c3.jpg" alt="Watch 1">
+            <img class="slides" src="C:\Users\PC\Desktop\Term 4\Web Programming\vaultX1\vaultX\watches\Nike.webp" alt="Watch 2">
+            <img class="slides" src="C:\Users\PC\Desktop\Term 4\Web Programming\vaultX1\vaultX\watches\a2f1eaf054e51da1ec265ae5a001a14e.jpg" alt="Watch 3">
+            
+        </div>
+
+        <a href="browse.html"><button class="button">SHOP NOW</button></a>
+    </main>
+
+    <script>
+       
+        let Index = 0;
+        slideshow();
+
+        function slideshow() {
+            let i;
+            const slides = document.getElementsByClassName("slides");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            Index++;
+            if (Index > slides.length)
+             { 
+                Index = 1
+             }
+            slides[Index - 1].style.display = "block";
+            setTimeout(slideshow, 2000); 
+        }
+    </script>
+</body>
+</html>
